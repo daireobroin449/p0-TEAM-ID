@@ -1,0 +1,3 @@
+[submodule "lib/square"]
+	path = lib/square
+	url = git@github.com:itcmartin/p0-STUDENT-ID
