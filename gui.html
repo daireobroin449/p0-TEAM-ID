@@ -8,19 +8,19 @@
 </head>
 <body>
   <script src="lib/square/square.js"></script>
-  <script src="src/p0-team-id.js"></script>
+  <script src="p0-team-id.js"></script>
 
   <h1>Superfilter</h1>
   
   <div>
     Please enter an input sequence:
     <input id="input" type="text" value="1,2,3,4,5"/>
-    <button type="button" onclick="javascript:superfilterGui(document.getElementById('input'),document.getElementById('output'));">Run the superfilter!</button><br />
+    <button id="filter" type="button" onclick="javascript:superfilterGui(document.getElementById('input'),document.getElementById('output'));">Run the superfilter!</button>
   </div>
   
   <div>
   The output sequence is:
-  <input id="output" type="text" disabled /><br />
+  <input id="output" type="text" value="100" />
   </div>
 </body>
 </html>

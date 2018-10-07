@@ -1,4 +1,4 @@
-/* global p0Team, describe, it, expect, should */
+/* global superfilter, describe, it, expect, should */
 
 describe('superfilter()', function () {
   'use strict';
