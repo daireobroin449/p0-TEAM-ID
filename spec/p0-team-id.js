@@ -8,9 +8,15 @@ describe('superfilter()', function () {
 
   });
 
-  it('uses square correctly', function () {
-    expect(superfilter()).to.equal(4);
+  it('computes the output sequence for [1,2,3,4,5]', function () {
+    expect(superfilter([1,2,3,4,5])).to.eql([1,4,9,16,25]); // use .eql instead of .equal
   });
-
-  // Add more assertions here
+  
+  it('computes the output sequence for []', function () {
+    expect(superfilter([])).to.eql([]); // use .eql instead of .equal
+  });
+  
+  it('computes the output sequence for [0,\'foo\',1,NaN,-2]', function () {
+    expect(superfilter([0,'foo',1,NaN,-2])).to.eql([0,NaN,1,NaN,4]); // use .eql instead of .equal
+  });
 });
