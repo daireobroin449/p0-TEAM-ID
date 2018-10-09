@@ -2,7 +2,9 @@
 'use strict';
 
 var superfilter = function (arr) {
-  return arr.map(square);
+  var result =  arr.map(square);
+  result = result.map(square);
+  return result;
 }
 
 var superfilterGui = function (input, output) {
