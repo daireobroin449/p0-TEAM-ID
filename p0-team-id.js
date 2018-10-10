@@ -13,6 +13,7 @@ var superfilterGui = function (input, output) {
   });
 
   output.value = superfilter(arr).join(',');
+  output.style.visibility = 'visible';
 }
 
 if ( typeof module !== "undefined" ) {
